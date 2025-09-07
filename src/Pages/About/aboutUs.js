@@ -1,202 +1,132 @@
 import React from "react";
-import aboutHero from "../../assets/hexagon-6564551_1280.jpg";
-import complianceImg from "../../assets/business-7096914_1280.png";
-import processImg from "../../assets/physics-3873118_1280.jpg";
-import trustImg from "../../assets/hands-5655424_1280.png";
+import aboutHero from "../../assets/ai-generated-9347724_1280.png"; // replace with a proper law/justice themed image
+import attorneyImg from "../../assets/ai-generated-9347724_1280.png"; // placeholder for attorney photo
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 const About = () => {
-  const navigate = useNavigate();
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="w-full py-20 bg-gradient-to-b from-red-100 via-pink-100 to-white">
-  <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-12">
-    {/* Left Content */}
-    <motion.div
-      initial={{ opacity: 0, x: -60 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
-    >
-     <motion.p
-  className="text-green-700 font-semibold text-sm tracking-wide uppercase mb-3 cursor-pointer hover:text-green-800 transition-colors"
-  initial={{ opacity: 0, y: -20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.2, duration: 0.6 }}
- 
->
-  About Us
-</motion.p>
+      <section className="relative h-[60vh] flex items-center justify-center bg-gray-900">
+        <img
+          src={aboutHero}
+          alt="About Hero"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="relative z-10 text-center px-6">
+          <motion.h1
+            className="text-4xl md:text-5xl font-bold text-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            About Our Firm
+          </motion.h1>
+          <motion.p
+            className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          >
+            Committed to providing compassionate, dedicated, and results-driven
+            legal services for families and individuals.
+          </motion.p>
+        </div>
+      </section>
 
+      {/* Introduction */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Who We Are
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            At <strong>Courtney Roller Law</strong>, we understand that legal
+            matters can be deeply personal and often overwhelming. That’s why we
+            focus on providing personalized representation tailored to each
+            client’s unique situation. Whether you are facing a family law case,
+            estate planning decision, or traffic-related issue, we are here to
+            guide you every step of the way with compassion and strength.
+          </p>
+        </div>
+      </section>
 
-      <motion.h1
-        className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
-        State Approved{" "}
-        <span className="text-blue-600 bg-yellow-200 px-2 py-1 rounded">
-          ADA
-        </span>
-        <br />
-        Compliance Partner.
-      </motion.h1>
-
-      <motion.p
-        className="text-gray-600 mb-8 text-lg"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
-      >
-       We’re a Minnesota-based State ADA vendor approved team dedicated to website accessibility. With legal insight and hands-on testing experience, we guide organizations in making their sites easier to use for people of all abilities. 
-<br>
-</br>
-<strong>Our founder Mike,a former attorney and operating paralegal ensures top compliance standards are at offer, giving us a unique perspective at the intersection of accessibility and business.
-</strong>
-      </motion.p>
-
-      <motion.button
-        className="px-6 py-3 rounded-md bg-green-700 text-white font-medium hover:bg-green-800 transition"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => navigate("/contact", { state: { scrollToContact: true } })}
-      >
-        Learn More
-      </motion.button>
-    </motion.div>
-  </div>
-</section>
-
-
-
-
-      {/* Section 2: What We Do */}
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
+      {/* Attorney Bio */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          {/* Attorney Image */}
           <div>
             <img
-              src={complianceImg}
-              alt="Compliance Process"
-              className="rounded-xl shadow-lg object-cover w-full"
+              src={attorneyImg}
+              alt="Attorney"
+              className="rounded-xl shadow-lg object-cover w-full h-[450px]"
             />
           </div>
 
-          {/* Content */}
+          {/* Bio Content */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Get Your Free Accessibility Scan Today
-
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Meet Courtney Roller
             </h2>
-            <p className="text-gray-600 mb-6">
-            We help Minnesota businesses make their websites accessible, inclusive, and aligned with both federal ADA law and state requirements. As a state-approved ADA compliance vendor, we bring credibility and practical expertise to every project.
-Our mission is simple: to make accessibility approachable. We believe compliance is more than just avoiding legal risk—it’s about reaching more people, improving visibility, and giving every visitor a better online experience.
-We partner with businesses of all sizes, from local shops to public organizations, and guide them step by step without unnecessary complexity. With a focus on inclusion, professionalism, and long-term support, we’re here to ensure your website works for everyone.
-
+            <p className="text-gray-600 mb-4">
+              Courtney Roller is a dedicated attorney with years of experience
+              representing individuals and families. Known for her compassionate
+              approach and unwavering commitment, she ensures that each client
+              feels supported during some of life’s most challenging times.
             </p>
-            {/* <ul className="space-y-4 text-gray-700">
-              <li>✅ Centralized compliance documentation</li>
-              <li>✅ Real-time monitoring and reporting</li>
-              <li>✅ Easy integration with existing systems</li>
-              <li>✅ Automated alerts for policy updates</li>
-            </ul> */}
+            <p className="text-gray-600">
+              With a focus on <strong>family law</strong>,{" "}
+              <strong>estate planning</strong>, and{" "}
+              <strong>traffic matters</strong>, Courtney brings both skill and
+              empathy to her practice, helping clients navigate the legal system
+              with clarity and confidence.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Section 3: Our Process */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      {/* Values / Mission */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Our Compliance Process
+            Our Values
           </h2>
-          <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
-            We follow a structured process to ensure that compliance is not just
-            a checkbox but a value addition to your business. Our experts and
-            platform work together to streamline compliance management.
+          <p className="text-gray-600 max-w-3xl mx-auto mb-12">
+            We believe that every client deserves honesty, respect, and
+            tireless advocacy. These values guide everything we do at Courtney
+            Roller Law.
           </p>
 
-          {/* Process Cards */}
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-md p-6 text-left">
-              <img
-                src={processImg}
-                alt="Assessment"
-                className="rounded-md mb-4 h-40 w-full object-cover"
-              />
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                1. Assessment
+            <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Compassion
               </h3>
               <p className="text-gray-600">
-                We begin by assessing your current compliance status, identifying
-                gaps, and understanding your regulatory requirements.
+                Understanding your struggles and supporting you with empathy and
+                respect.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-md p-6 text-left">
-              <img
-                src={processImg}
-                alt="Implementation"
-                className="rounded-md mb-4 h-40 w-full object-cover"
-              />
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                2. Implementation
+            <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Dedication
               </h3>
               <p className="text-gray-600">
-                Our team helps implement necessary frameworks, tools, and
-                policies to align your business with compliance standards.
+                Fighting tirelessly to protect your best interests and those of
+                your family.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-md p-6 text-left">
-              <img
-                src={processImg}
-                alt="Monitoring"
-                className="rounded-md mb-4 h-40 w-full object-cover"
-              />
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                3. Monitoring
+            <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Integrity
               </h3>
               <p className="text-gray-600">
-                Continuous monitoring and automated alerts ensure you remain
-                compliant even as regulations evolve.
+                Offering honest guidance and ethical representation you can
+                trust.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Why Trust Us */}
-      <section className="bg-green-50 py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Why Businesses Trust Us
-            </h2>
-            <p className="text-gray-600 mb-6">
-              Over the years, we’ve supported startups, SMEs, and enterprises in
-              achieving compliance without unnecessary stress. Our reputation is
-              built on trust, innovation, and customer success.
-            </p>
-            <ul className="space-y-4 text-gray-700">
-              <li>🔒 Secure data handling</li>
-              <li>⚡ Scalable compliance platform</li>
-              <li>🤝 Dedicated support team</li>
-              <li>🌍 Global compliance coverage</li>
-            </ul>
-          </div>
-
-          {/* Image */}
-          <div>
-            <img
-              src={trustImg}
-              alt="Trusted Compliance"
-              className="rounded-xl shadow-lg object-cover w-full"
-            />
           </div>
         </div>
       </section>
