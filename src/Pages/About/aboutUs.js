@@ -1,5 +1,5 @@
 import React from "react";
-import aboutHero from "../../assets/ai-generated-9347724_1280.png"; // replace with a proper law/justice themed image
+import aboutHero from "../../assets/advice-2911664_1280.jpg"; // replace with a proper law/justice themed image
 import attorneyImg from "../../assets/ai-generated-9347724_1280.png"; // placeholder for attorney photo
 import { motion } from "framer-motion";
 
