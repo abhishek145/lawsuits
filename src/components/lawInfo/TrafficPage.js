@@ -14,14 +14,14 @@ export default function TrafficPage() {
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-6 max-w-3xl">
+        {/* <div className="relative z-10 px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
             TRAFFIC VIOLATIONS
           </h1>
           <p className="text-lg">
             Traffic court made quick and simple in Davidson County.
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* Body */}

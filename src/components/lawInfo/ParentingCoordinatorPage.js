@@ -14,14 +14,14 @@ export default function ParentingCoordinatorPage() {
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-6 max-w-3xl">
+        {/* <div className="relative z-10 px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
             PARENTING COORDINATOR SERVICES
           </h1>
           <p className="text-lg">
             Decision making and dispute resolution for parents.
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* Body (you can expand with specific process/benefits as needed) */}

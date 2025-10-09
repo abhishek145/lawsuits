@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
           {/* Logo & Firm Info */}
           <div>
-            <h2 className="text-2xl font-bold text-white">Legal Counsel</h2>
+            <h2 className="text-2xl font-bold text-white">People’s Legal Counsel</h2>
             <p className="mt-3 text-sm text-gray-300">
               Delivering exceptional legal representation across corporate law,
               litigation, family matters, and beyond.
@@ -92,7 +92,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
-          <p>© {new Date().getFullYear()} Legal Counsel. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} People’s Legal Counsel. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             {/* <a href="https://facebook.com">
               <Facebook size={18} className="hover:text-[#f09f1a]" />

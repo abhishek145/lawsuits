@@ -14,7 +14,7 @@ export default function GuardianAdLitemPage() {
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 px-6 max-w-3xl">
+        {/* <div className="relative z-10 px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
             GUARDIAN AD LITEM
           </h1>
@@ -22,7 +22,7 @@ export default function GuardianAdLitemPage() {
             Investigating allegations, narrowing issues, and submitting
             recommendations.
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* Body */}

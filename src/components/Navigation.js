@@ -29,7 +29,7 @@ export default function Navigation() {
           onClick={() => (window.location.href = "#home")}
         >
           <span className="text-2xl md:text-3xl font-bold text-[#243e9d]">
-            LegalCounsel.law
+          People’s Legal Counsel
           </span>
         </motion.div>
 
