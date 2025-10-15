@@ -20,11 +20,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white">Services</h3>
             <ul className="mt-3 space-y-2 text-sm">
-              <li>
+              {/* <li>
                 <a href="#services" className="hover:text-[#f09f1a]">
                   Family Law
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#services" className="hover:text-[#f09f1a]">
                   Criminal Defense
@@ -35,11 +35,11 @@ export default function Footer() {
                   Estate Planning
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#services" className="hover:text-[#f09f1a]">
                   Traffic Violations
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

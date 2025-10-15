@@ -49,7 +49,7 @@ export default function Home() {
           className="text-center px-6 relative z-10 max-w-3xl"
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Hamilton & Associates
+          People’s Legal Counsel
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-200">
             Trusted advocates with decades of legal expertise, delivering
